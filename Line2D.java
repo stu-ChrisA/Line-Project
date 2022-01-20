@@ -15,10 +15,10 @@ public class Line2D
     }
     public Line2D (int x1, int y1, int x2, int y2)
     {
-      this.xOne = x1;
-	    this.yOne = y1;
-	    this.xTwo = x2;
-	    this.yTwo = y2;
+	this.xOne = x1;
+	this.yOne = y1;
+	this.xTwo = x2;
+	this.yTwo = y2;
     }
     public Point getP1()
     {
