@@ -42,5 +42,4 @@ public class Point
             return slope1 == slope2; 
         }
     }
-
 }
