@@ -3,10 +3,6 @@ public class Line2D
     
     private Point p1;
     private Point p2;
-    private int xOne;
-    private int yOne;
-    private int xTwo;
-    private int yTwo;
     public Line2D(Point p1, Point p2)
     {
         this.p1 = p1;
@@ -15,22 +11,20 @@ public class Line2D
     }
     public Line2D (int x1, int y1, int x2, int y2)
     {
-	this.xOne = x1;
-	this.yOne = y1;
-	this.xTwo = x2;
-	this.yTwo = y2;
+        this.p1 = new Point(x1,y1);
+        this.p2 = new Point(x2,y2);
     }
-    public Point getP1()
+    public String getP1()
     {
-        return p1;
+        return "[" + p1.getX() + "," + p1.getY() + "] ";
     }
-    public Point getP2()
+    public String getP2()
     {
-        return p2;
+        return "[" + p2.getX() + "," + p2.getY() + "]";
     }
     public String toString() 
     {
-        return "[" + p1.toString() + ", " + p2.toString() + "]";
+        return "[" + p1.getX() + "," + p1.getY() + "] " + "[" + p2.getX() + "," + p2.getY() + "]";
     }
     public double getSlope() 
     {
